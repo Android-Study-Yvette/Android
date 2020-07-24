@@ -12,24 +12,19 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.button_group);
+        setContentView(R.layout.activity_main);
 
-        Button button = findViewById(R.id.button);
+        Button button = findViewById(R.id.select_contact_button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navigateToLogin();
+                startSelectContactActivity();
             }
         });
     }
 
-    private void openConstraint() {
-        Intent intent = new Intent(this, ConstraintActivity.class);
-        startActivity(intent);
-    }
-
-    private void navigateToLogin() {
-        Intent intent = new Intent(this, LoginActivity.class);
+    private void startSelectContactActivity() {
+        Intent intent = new Intent(this, SelectContactActivity.class);
         startActivity(intent);
     }
 

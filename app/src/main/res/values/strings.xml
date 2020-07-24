@@ -21,4 +21,6 @@
     <string name="forgot_password">Forgot password?</string>
     <string name="login_button">Login</string>
     <string name="or_connect_with">or connect with</string>
+    <string name="activity_practice">Activity Practice</string>
+    <string name="select_contact">Select Contact</string>
 </resources>
