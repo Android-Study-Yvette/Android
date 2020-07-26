@@ -18,6 +18,18 @@
         android:layout_marginTop="60dp"
     />
 
+    <Button
+        android:id="@+id/life_cycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/select_contact_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/life_cycle"
+        android:textAllCaps="false"
+        android:layout_marginTop="60dp"
+    />
+
     <TextView
         android:id="@+id/contact_info"
         android:layout_width="wrap_content"

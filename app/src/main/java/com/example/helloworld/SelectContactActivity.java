@@ -25,6 +25,14 @@ public class SelectContactActivity extends AppCompatActivity {
                 selectContact();
             }
         });
+
+        Button lifeCycleButton = findViewById(R.id.life_cycle);
+        lifeCycleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startLifeCycleActivity();
+            }
+        });
     }
 
     static final int REQUEST_SELECT_CONTACT = 1;
@@ -54,5 +62,10 @@ public class SelectContactActivity extends AppCompatActivity {
                 textView.setText(name + number);
             }
         }
+    }
+
+    private void startLifeCycleActivity() {
+        Intent intent = new Intent(this, LifeCycleActivity.class);
+        startActivity(intent);
     }
 }
